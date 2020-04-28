@@ -36,7 +36,16 @@ namespace WindowsFormsPartC.Unit5
         /// </summary>
         private void LoadImages(object sender, EventArgs e)
         {
-            string baseFileName = "../../Images/Butterflies/bfly"; ;
+            string baseFileName;
+
+            if (horseRadioButton.Checked)
+            {
+                baseFileName = "../../Images/Horses/horsey"; ;
+            }
+            else
+            {
+                baseFileName = "../../Images/Butterflies/bfly"; ;
+            }
 
             for (imageNo = 0; imageNo < MAXN_IMAGES; imageNo++)
             {
@@ -59,7 +68,7 @@ namespace WindowsFormsPartC.Unit5
         /// </summary>
         private void UpdateImage(object sender, EventArgs e)
         {
-            if (imageNo >= MAXN_IMAGES)
+            if (imageNo >= MAXN_IMAGES - 1)
                 imageNo = 0;
             else
                 imageNo++;
