@@ -94,5 +94,10 @@ namespace WindowsFormsPartC.Unit5
             animationTimer.Stop();
         }
 
+        private void updateDateTime(object sender, EventArgs e)
+        {
+            dateLabel.Text = DateTime.Now.ToLongDateString();
+            timeLabel.Text = DateTime.Now.ToLongTimeString();
+        }
     }
 }
