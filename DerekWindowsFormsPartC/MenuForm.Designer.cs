@@ -41,13 +41,13 @@
             this.animationRadioButton.Name = "animationRadioButton";
             this.animationRadioButton.Size = new System.Drawing.Size(408, 30);
             this.animationRadioButton.TabIndex = 0;
-            this.animationRadioButton.TabStop = true;
             this.animationRadioButton.Text = "Task 5.1 Butterfly and Horse Animation";
             this.animationRadioButton.UseVisualStyleBackColor = true;
             // 
             // flyMeRadioButton
             // 
             this.flyMeRadioButton.AutoSize = true;
+            this.flyMeRadioButton.Checked = true;
             this.flyMeRadioButton.Location = new System.Drawing.Point(28, 130);
             this.flyMeRadioButton.Name = "flyMeRadioButton";
             this.flyMeRadioButton.Size = new System.Drawing.Size(337, 30);

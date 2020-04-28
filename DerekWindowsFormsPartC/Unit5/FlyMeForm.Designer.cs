@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FlyMeForm));
             this.panel1 = new System.Windows.Forms.Panel();
             this.stopRadioButton = new System.Windows.Forms.RadioButton();
             this.startRadioButton = new System.Windows.Forms.RadioButton();
@@ -87,6 +88,7 @@
             // 
             // copterPictureBox
             // 
+            this.copterPictureBox.BackColor = System.Drawing.Color.Transparent;
             this.copterPictureBox.Location = new System.Drawing.Point(160, 80);
             this.copterPictureBox.Name = "copterPictureBox";
             this.copterPictureBox.Size = new System.Drawing.Size(100, 117);
@@ -96,13 +98,15 @@
             // animationTimer
             // 
             this.animationTimer.Enabled = true;
-            this.animationTimer.Tick += new System.EventHandler(this.animationTimer_Tick);
+            this.animationTimer.Interval = 30;
+            this.animationTimer.Tick += new System.EventHandler(this.updateImage);
             // 
             // FlyMeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1067, 611);
             this.Controls.Add(this.copterPictureBox);
             this.Controls.Add(this.quitButton);
