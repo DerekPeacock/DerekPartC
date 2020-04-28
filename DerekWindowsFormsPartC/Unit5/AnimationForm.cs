@@ -40,11 +40,11 @@ namespace WindowsFormsPartC.Unit5
 
             if (horseRadioButton.Checked)
             {
-                baseFileName = "../../Images/Horses/horsey"; ;
+                baseFileName = "../../Images/Horses/horsey"; 
             }
             else
             {
-                baseFileName = "../../Images/Butterflies/bfly"; ;
+                baseFileName = "../../Images/Butterflies/bfly"; 
             }
 
             for (imageNo = 0; imageNo < MAXN_IMAGES; imageNo++)

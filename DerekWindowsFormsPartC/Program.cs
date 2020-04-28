@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using WindowsFormsPartC.Unit5;
 
-namespace DerekWindowsFormsPartCUnit5
+namespace WindowsFormsPartCUnit5
 {
     static class Program
     {
@@ -17,7 +17,10 @@ namespace DerekWindowsFormsPartCUnit5
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new AnimationForm());
+
+            //Application.Run(new AnimationForm());
+            Application.Run(new FlyMeForm());
+
         }
     }
 }
