@@ -103,6 +103,7 @@
     <Folder Include="Unit7\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Images\Backgrounds\City1.wmf" />
     <Content Include="Images\Butterflies\bfly.gif" />
     <Content Include="Images\Butterflies\bfly0.gif" />
     <Content Include="Images\Butterflies\bfly1.gif" />

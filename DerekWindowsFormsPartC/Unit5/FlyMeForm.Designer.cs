@@ -36,8 +36,11 @@
             this.quitButton = new System.Windows.Forms.Button();
             this.copterPictureBox = new System.Windows.Forms.PictureBox();
             this.animationTimer = new System.Windows.Forms.Timer(this.components);
+            this.speedNumericUpDown = new System.Windows.Forms.NumericUpDown();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.copterPictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.speedNumericUpDown)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -98,8 +101,40 @@
             // animationTimer
             // 
             this.animationTimer.Enabled = true;
-            this.animationTimer.Interval = 30;
             this.animationTimer.Tick += new System.EventHandler(this.updateImage);
+            // 
+            // speedNumericUpDown
+            // 
+            this.speedNumericUpDown.Location = new System.Drawing.Point(430, 530);
+            this.speedNumericUpDown.Maximum = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
+            this.speedNumericUpDown.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.speedNumericUpDown.Name = "speedNumericUpDown";
+            this.speedNumericUpDown.Size = new System.Drawing.Size(73, 32);
+            this.speedNumericUpDown.TabIndex = 5;
+            this.speedNumericUpDown.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.speedNumericUpDown.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.speedNumericUpDown.ValueChanged += new System.EventHandler(this.changeSpeed);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(336, 532);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(75, 26);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "Speed";
             // 
             // FlyMeForm
             // 
@@ -107,7 +142,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1067, 611);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.speedNumericUpDown);
             this.Controls.Add(this.copterPictureBox);
             this.Controls.Add(this.quitButton);
             this.Controls.Add(this.panel1);
@@ -119,7 +157,9 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.copterPictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.speedNumericUpDown)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -131,5 +171,7 @@
         private System.Windows.Forms.Button quitButton;
         private System.Windows.Forms.PictureBox copterPictureBox;
         private System.Windows.Forms.Timer animationTimer;
+        private System.Windows.Forms.NumericUpDown speedNumericUpDown;
+        private System.Windows.Forms.Label label1;
     }
 }
