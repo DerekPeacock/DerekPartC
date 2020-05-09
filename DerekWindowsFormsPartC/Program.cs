@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace WindowsFormsPartC
+namespace DerekWindowsFormsPartC
 {
     static class Program
     {
@@ -17,7 +17,7 @@ namespace WindowsFormsPartC
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            Application.Run(new MenuForm());
+            Application.Run(new SketchForm());
         }
     }
 }
