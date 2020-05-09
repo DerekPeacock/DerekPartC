@@ -99,7 +99,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Unit6\" />
     <Folder Include="Unit7\" />
   </ItemGroup>
   <ItemGroup>
